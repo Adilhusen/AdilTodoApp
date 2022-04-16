@@ -1,5 +1,5 @@
 package com.ad.adilpracticaltask.util
 
 object Constant {
-    const val BASE_URL = "https://yourapi.com/api/"
+    const val ROOM_DATA_BASE_NAME = "todo_datastore"
 }
