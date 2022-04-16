@@ -10,7 +10,10 @@ import com.ad.adilpracticaltask.base.BaseActivity
 import com.ad.adilpracticaltask.data.adapters.TodoAdapter
 import com.ad.adilpracticaltask.data.local.model.DataModel
 import com.ad.adilpracticaltask.databinding.ActivityMainBinding
+import com.ad.adilpracticaltask.presentation.fragments.AddTaskBottomSheetFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : BaseActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
     var listAdapter: TodoAdapter? = null
@@ -61,7 +64,8 @@ class MainActivity : BaseActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.imgAdd -> {
-
+                val bottomSheetFragment = AddTaskBottomSheetFragment()
+                bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.tag)
             }
 
         }

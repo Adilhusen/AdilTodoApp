@@ -13,6 +13,6 @@ data class DataModel(
     val dayName: String,
     val month: String,
     val time: String,
-    var alertNotification: Boolean,
+    var alertNotification: Boolean=true,
     var isCompleted: Boolean=false
 )

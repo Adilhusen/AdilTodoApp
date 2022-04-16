@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AdilPracticalTask</string>
+
+    <!--add popup-->
+    <string name="tasks">Tasks..</string>
+    <string name="alert">Alert</string>
+    <string name="hint_alert">Alert will gives you a notification at the exact time</string>
+    <string name="save">Save</string>
+    <string name="date">Date</string>
 </resources>
