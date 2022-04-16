@@ -17,6 +17,7 @@
 
     <androidx.appcompat.widget.AppCompatEditText
         style="@style/TextView_Medium"
+        android:id="@+id/edtTask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"
@@ -68,6 +69,7 @@
 
     <androidx.appcompat.widget.SwitchCompat
         style="@style/TextView_Medium"
+        android:id="@+id/alertNotificationSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"

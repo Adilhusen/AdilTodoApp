@@ -5,8 +5,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "Tasks")
 data class DataModel(
-    @PrimaryKey (autoGenerate = true)
-    val id: Int,
+
     val task: String,
     val date: String,
     val dayNumber: String,
@@ -16,3 +15,7 @@ data class DataModel(
     var alertNotification: Boolean=true,
     var isCompleted: Boolean=false
 )
+{
+    @PrimaryKey (autoGenerate = true)
+    val id: Int = 0
+}
