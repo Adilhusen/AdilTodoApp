@@ -9,6 +9,10 @@ data class DataModel(
     val id: Int,
     val task: String,
     val date: String,
+    val dayNumber: String,
+    val dayName: String,
+    val month: String,
     val time: String,
-    val alertNotification: Boolean,
+    var alertNotification: Boolean,
+    var isCompleted: Boolean=false
 )
